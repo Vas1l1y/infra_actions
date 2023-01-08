@@ -61,6 +61,7 @@ build_and_push_to_docker_hub:
         with:
           push: true
           tags: vas1l1y/infra_actions:latest
+
 deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
